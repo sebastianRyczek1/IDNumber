@@ -15,6 +15,5 @@ public class IDCheckerTest {
     public void CheckId(String Id, boolean result){
         IDChecker idChecker=new IDChecker(Id);
         assertEquals(result,idChecker.check());
-
     }
 }

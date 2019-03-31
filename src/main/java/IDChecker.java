@@ -1,12 +1,14 @@
+import java.sql.SQLOutput;
 import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class IDChecker {
-    private String Id = null;
+    private String Id;
 
     public IDChecker(String id) {
-        Id = id;
+        this.Id = id;
     }
 
     public boolean check() {
@@ -25,10 +27,11 @@ public class IDChecker {
         for (int i = 0; i < 9; i++) {
             sum += WeightDic().get(i) * values[i];
         }
-        System.out.println(sum);
         if (sum % 10 == 0) {
+            System.out.println("Podałeś poprawny nr dowodu");
             return true;
         }
+        System.out.println("Podałeś zły numer dowodu");
         return false;
     }
 
