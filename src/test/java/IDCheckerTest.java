@@ -1,4 +1,5 @@
 import static org.junit.Assert.*;
+
 import junitparams.JUnitParamsRunner;
 
 import junitparams.Parameters;
@@ -11,9 +12,9 @@ import static org.junit.Assert.*;
 public class IDCheckerTest {
 
     @Test
-    @Parameters({"AAA111111,true","AVD441001,false","STR879543,true","STR873543,false"})
-    public void CheckId(String Id, boolean result){
-        IDChecker idChecker=new IDChecker(Id);
-        assertEquals(result,idChecker.check());
+    @Parameters({"AAA111111,true", "AVD441001,false", "STR879543,true", "STR873543,false"})
+    public void CheckId(String Id, boolean result) {
+        IDChecker idChecker = new IDChecker(Id);
+        assertEquals(result, idChecker.check());
     }
 }

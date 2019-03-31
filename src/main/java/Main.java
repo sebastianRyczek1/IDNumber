@@ -5,6 +5,7 @@ public class Main {
         IDChecker idChecker = new IDChecker(IdFormatChecker());
         idChecker.check();
     }
+
     private static String IdFormatChecker() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj swój nr dowodu");

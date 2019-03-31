@@ -1,8 +1,5 @@
-import java.sql.SQLOutput;
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class IDChecker {
     private String Id;
@@ -13,8 +10,6 @@ public class IDChecker {
 
     public boolean check() {
         int sum = 0;
-        int weight = 7;
-
         Integer[] values = new Integer[9];
         char[] letters = Id.substring(0, 3).toCharArray();
         for (int i = 0; i < 9; i++) {
